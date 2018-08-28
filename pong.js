@@ -159,11 +159,10 @@ $(document).ready(function(){
 		keyPressed = e.which;
 	});
 
+	$("button").on("click",function(){
+		$(this).hide();
+		init();
+	})
+
+	main();
 });
-
-$("button").on("click",function(){
-	$(this).hide();
-	init();
-})
-
-main();
